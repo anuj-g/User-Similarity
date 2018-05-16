@@ -1,6 +1,5 @@
 import psycopg2
 import numpy as np
-import pandas as pd
 from scipy.spatial.distance import squareform
 from scipy.spatial.distance import pdist, jaccard
 from sklearn.preprocessing import normalize
