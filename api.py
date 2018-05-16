@@ -15,7 +15,7 @@ def getSimilarUsers(user_handle):
     try:
         result = {}
         conn = psycopg2.connect("dbname='iris' user='postgres' host='localhost'\
-            password='Cips@1234'")
+            password='postgres'")
         cur = conn.cursor()
         query = """SELECT * from similar_users where similar_users.user =""" \
             + str(user_handle)

@@ -165,7 +165,6 @@ Calculates similarity between users using cosine similarity
 Stores similar user matrix in csv format
 '''
 def calculatesimilarity(user_ids, feature_matrix):
-    feature_matrix = normalize(feature_matrix)
     res = 1 - pdist(feature_matrix, 'cosine')
     similarity_matrix = squareform(res)
     user_ids = np.asarray(user_ids, dtype=np.int32)
