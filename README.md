@@ -13,9 +13,8 @@ Dependencies:
 
 Steps to run the program:
 (Change username and password of postgre server in following files)
-1) Run command - python dataindexing.py
-2) Run command - python similaritymatrix.py
-3) Run command - python api.py
-
-To get similar users:
-URL: http://50.63.161.225:3041/userhandle/123 - 123 is user handle of similar user
+1) Put all csv files in data folder
+2) Run command - python dataindexing.py
+3) Run command - python similaritymatrix.py
+4) Run command - python api.py
+5) To get similar users: http://localhost:3041/userhandle/123 - 123 is query user handle
